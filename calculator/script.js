@@ -26,7 +26,7 @@ var screen = document.createElement('p');
 screen.className='p';
 screen.id='screen';
 screen.innerText='Enter in format num1 operator num2';
-screen.setAttribute('style', 'border:1px solid black; padding:10px;');
+screen.setAttribute('style', "border:1px solid black; padding:10px; font-family: 'Iceland', cursive; background-color:black; color:white; font-size:30px");
 column.append(screen);
 
 var operator = document.createElement('div');
