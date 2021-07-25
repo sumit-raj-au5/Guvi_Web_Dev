@@ -51,7 +51,8 @@
   <div class="main-body">
     <!-- Sidebar Starts -->
     <div class="sidebar">
-      <button class="sidebar-compose" data-bs-toggle="modal" data-bs-target="#composeMailModal"><span class="material-icons"> add </span>Compose</button>
+      <button class="sidebar-compose" onclick="openComposeMail()"><span class="material-icons"> add </span>Compose
+      </button>
       <div class="sidebarOption sidebarOption-active" onclick="getReceivedMail()">
         <span class="material-icons"> inbox </span>
         <h3>Inbox</h3>
@@ -157,34 +158,10 @@
           <p class="emailRow-time">10pm</p>
         </div> -->
 
-        <!-- Email Row Ends -->
+
         <div class="container">
-          <!-- <div class="row emailRow">
-            <div class="col-sm-3">
-            <input type="checkbox" name="" id="" />
-            <span class="material-icons"> star_border </span>
-            <span class="material-icons"> label_important </span>
-            </div>
-
-            <div class="col-sm-3">
-              <h3 class="emailRow-title">YouTube</h3>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="emailRow-message">
-                <h4 class="emailRow-title">
-                  You Got a New Subscriber
-                  <span class="emailRow-description"> - on Your Channel lorum ipsum </span>
-                </h4>
-              </div>
-            </div>
-
-            <div class="col-sm-3">
-              <p class="emailRow-time">10pm</p>
-            </div>
-          </div> -->
         </div>
-
+        <!-- Email Row Ends -->
       </div>
       <!-- Email List rows Ends -->
     </div>
@@ -193,14 +170,14 @@
   <!-- Modal starts -->
   <!-- Modal -->
   <!-- Show Mail Start-->
-  <div class="modal fade" id="mail" tabindex="-1" aria-labelledby="SendMailModal" aria-hidden="true">
+  <div class="modal fade" id="mail" tabindex="-1" aria-labelledby="MailModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title" id="showMailTitle">Modal title</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body container">
+        <div class="modal-body container" id = "showMailBody">
           <p>Modal body text goes here.</p>
         </div>
         <div class="modal-footer">
@@ -210,14 +187,14 @@
   </div>
   <!-- Show Mail Ends -->
   <!-- Compose Mail Starts -->
-  <div class="modal fade" id="composeMailModal" tabindex="-1" aria-labelledby="composeMailModal" aria-hidden="true">
+  <!-- <div class="modal fade" id="composeMailModal" tabindex="-1" aria-labelledby="composeMailModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-dark text-white">
-          <p class="form-title modal-title">New Message</p>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">X</button>
+          <p class="form-title modal-title" id = "composeMailTitle">New Message</p>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body container form-body">
+        <div class="modal-body container form-body" id="#composeMailBody">
           <div class="col-lg-12 p-0 message-box-input">
             <form id="composeMailForm">
               <div class="form-group">
@@ -230,8 +207,8 @@
             </form>
           </div>
           <div class="co-lg-12 message-box-last-content p-2">
-            <a href="#" class="btn btn-primary btn-sm pl-3 pr-3" type="submit" onclick="sendMail()"
-            data-bs-dismiss="modal" aria-label="Close">SEND</a>
+            <a href="#" class="btn btn-primary btn-sm pl-3 pr-3" type="submit" onclick="sendMail()">SEND
+            </a>
             <span>
               <i class="fa fa-paperclip" aria-hidden="true"></i>
               <i class="fa fa-file" aria-hidden="true"></i>
@@ -240,14 +217,15 @@
               <i class="fa fa-smile-o" aria-hidden="true"></i>
             </span>
             <span class="pull-right">
-              <i class="fa fa-trash-o" aria-hidden="true"></i>
-            </span>
-          </div>
+              <i class="fa fa-trash-o" aria-hidden="true"></i> 
+            </span> 
+          </div> 
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
   <!-- Compose Mail Ends -->
+
   <!-- Modal Ends -->
 
   <!-- Main Body Ends -->
