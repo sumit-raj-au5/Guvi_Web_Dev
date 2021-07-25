@@ -130,9 +130,8 @@ async function getDraftMail() {
 
 function printDraftMail(data) {
   container.innerHTML = "";
-  let id;
   data.forEach((mail) => {
-    id = mail.id;
+    let id = mail.id;
     let username = mail.username;
     let subject = mail.subject;
     let mailContent = mail.mailContent.substring(0, 20);
@@ -168,8 +167,9 @@ function printDraftMail(data) {
         </div>
       </div>`;
   });
-  $(".demail-short-detail").on("click", () => {
-    openComposeMail((draftMail = true), id);
+  $(".demail-short-detail").on("click", (e) => {
+    let triggering_element_id = $(e.target).closest(".row").attr("id");
+    openComposeMail(true ,triggering_element_id);
   });
 }
 
@@ -208,14 +208,13 @@ async function showMail() {
   $("#showMailBody").html(mailBody);
 }
 
-async function openComposeMail(draftMail = false, id = 0) {
+async function openComposeMail(draftMail=false, id) {
   var mailTo = "";
   var composeMailTitle = "";
   var mailBody = "";
   var composeMailSubject="";
   $("#mail").modal("show");
   if (draftMail) {
-    console.log(id);
     let emailType = "draft/";
     let url = api + emailType + id;
     try {
