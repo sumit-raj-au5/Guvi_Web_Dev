@@ -1,0 +1,101 @@
+
+.fas{
+    color:#000;
+}
+
+.container{
+    background-color: #303E47;
+    width: 590px;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    padding: 3%;
+}
+
+.heading-icon{
+    color:rgb(0, 177, 226);
+}
+.heading{
+    font-weight: 700;
+    color:#FF5959;
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+
+.second-heading{
+    font-weight: 700;
+    font-size: small;
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+.card{
+    border-radius: 0;
+    padding: 10px;
+}
+
+.col-6{
+    padding-right:0 ;
+}
+.colored-icon{
+    color:rgb(251, 93, 97);
+}
+
+.row-0{
+    margin-bottom: 5%;
+}
+.row-1-col-1{
+    background-color: #FF9E1B;
+}
+
+.row-1-col-2{
+    background-color: rgb(0, 177, 226);
+}
+
+.stat-large-text{
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.row-2-col-1{
+    background-color: #FF5959;
+    padding: 0 2% 0 0;
+}
+.row-2-icon{
+    font-size: medium;
+}
+
+.icon-group{
+    padding: 0 0 2% 4%;
+    
+}
+
+.row-3-col-1{
+    background-color: rgb(0, 177, 226);
+}
+
+.row-4-col-1{
+    background-color: #FF5959;
+}
+
+.row-4-col-2{
+    background-color: #FF9E1B;
+}
+
+.row-5-col-1{
+    background-color: rgb(0, 177, 226);
+}
+
+.row-6-col-1{
+    background-color: #FF9E1B;
+}
+
+.large-text{
+    font-size: large;
+    font-weight: 600;
+}
+
+.fa-male{
+    margin:5px;
+}
