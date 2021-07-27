@@ -29,8 +29,9 @@
   <!-- Header design Starts -->
   <div class="header">
     <div class="header-left">
-      <span class="material-icons"> menu </span>
-      <img src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png" alt="gmail icon" />
+      <span class="material-icons" id="toggleButton" role="button"> menu </span>
+      <img class="d-none d-md-block" src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png"
+        alt="gmail icon" />
     </div>
 
     <div class="header-middle">
@@ -50,40 +51,40 @@
   <!-- Main Body Starts -->
   <div class="main-body">
     <!-- Sidebar Starts -->
-    <div class="sidebar">
+    <div class="sidebar d-none d-lg-block" id="sidebar">
       <button class="sidebar-compose" onclick="openComposeMail()"><span class="material-icons"> add </span>Compose
       </button>
-      <div class="sidebarOption sidebarOption-active" onclick="getReceivedMail()">
+      <div class="sidebarOption sidebarOption-active" onclick="getReceivedMail()" id="inbox">
         <span class="material-icons"> inbox </span>
         <h3>Inbox</h3>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" id="starred">
         <span class="material-icons"> star </span>
         <h3>Starred</h3>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" id="snoozed">
         <span class="material-icons"> access_time </span>
         <h3>Snoozed</h3>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" id="important">
         <span class="material-icons"> label_important </span>
         <h3>Important</h3>
       </div>
 
-      <div class="sidebarOption" onclick="getSentMail()">
+      <div class="sidebarOption" onclick="getSentMail()" id="sent">
         <span class="material-icons"> near_me </span>
         <h3>Sent</h3>
       </div>
 
-      <div class="sidebarOption" onclick="getDraftMail()">
+      <div class="sidebarOption" onclick="getDraftMail()" id="draft">
         <span class="material-icons"> note </span>
         <h3>Drafts</h3>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" id="more">
         <span class="material-icons"> expand_more </span>
         <h3>More</h3>
       </div>
@@ -99,7 +100,7 @@
     <!-- Sidebar Ends -->
 
     <!-- Email List Starts -->
-    <div class="emailList">
+    <div class="emailList" id="emailSection">
       <!-- Settings Starts -->
       <div class="emailList-settings">
         <div class="emailList-settingsLeft">
@@ -139,27 +140,7 @@
       <!-- Email List rows starts -->
       <div class="emailList-list">
         <!-- Email Row Starts -->
-        <!-- <div class="emailRow">
-          <div class="emailRow-options">
-            <input type="checkbox" name="" id="" />
-            <span class="material-icons"> star_border </span>
-            <span class="material-icons"> label_important </span>
-          </div>
-
-          <h3 class="emailRow-title">YouTube</h3>
-
-          <div class="emailRow-message">
-            <h4>
-              You Got a New Subscriber
-              <span class="emailRow-description"> - on Your Channel lorum ipsum </span>
-            </h4>
-          </div>
-
-          <p class="emailRow-time">10pm</p>
-        </div> -->
-
-
-        <div class="container">
+        <div class="container-fluid">
         </div>
         <!-- Email Row Ends -->
       </div>
@@ -167,18 +148,31 @@
     </div>
     <!-- Email List Ends -->
   </div>
+
   <!-- Modal starts -->
-  <!-- Modal -->
   <!-- Show Mail Start-->
-  <div class="modal fade" id="mail" tabindex="-1" aria-labelledby="MailModal" aria-hidden="true">
+  <div class="modal fade" id="mail" tabindex="-1" data-bs-backdrop="static" aria-labelledby="MailModal" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="showMailTitle">Modal title</h5>
+          <h5 class="modal-title" id="showMailTitle">Loading...</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body container" id = "showMailBody">
-          <p>Modal body text goes here.</p>
+        <div class="modal-body container" id="showMailBody">
+          <p class="text-center">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-danger" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-warning" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          <div class="spinner-grow text-success" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+          </p>
         </div>
         <div class="modal-footer">
         </div>
@@ -186,46 +180,6 @@
     </div>
   </div>
   <!-- Show Mail Ends -->
-  <!-- Compose Mail Starts -->
-  <!-- <div class="modal fade" id="composeMailModal" tabindex="-1" aria-labelledby="composeMailModal" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header bg-dark text-white">
-          <p class="form-title modal-title" id = "composeMailTitle">New Message</p>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body container form-body" id="#composeMailBody">
-          <div class="col-lg-12 p-0 message-box-input">
-            <form id="composeMailForm">
-              <div class="form-group">
-                <input type="email" class="form-control" id="composeEmail" aria-describedby="emailHelp"
-                  placeholder="Recipient">
-                <input type="email" class="form-control" id="composeSubject" aria-describedby="emailHelp"
-                  placeholder="Subject">
-                <textarea class="form-control" id="composeMailContent" rows="6"></textarea>
-              </div>
-            </form>
-          </div>
-          <div class="co-lg-12 message-box-last-content p-2">
-            <a href="#" class="btn btn-primary btn-sm pl-3 pr-3" type="submit" onclick="sendMail()">SEND
-            </a>
-            <span>
-              <i class="fa fa-paperclip" aria-hidden="true"></i>
-              <i class="fa fa-file" aria-hidden="true"></i>
-              <i class="fa fa-picture-o" aria-hidden="true"></i>
-              <i class="fa fa-link" aria-hidden="true"></i>
-              <i class="fa fa-smile-o" aria-hidden="true"></i>
-            </span>
-            <span class="pull-right">
-              <i class="fa fa-trash-o" aria-hidden="true"></i> 
-            </span> 
-          </div> 
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- Compose Mail Ends -->
-
   <!-- Modal Ends -->
 
   <!-- Main Body Ends -->
