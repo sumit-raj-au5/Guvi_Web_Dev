@@ -1,0 +1,69 @@
+body{
+    background-color: #222429;
+    color:#16E686;
+    font-family: 'Uchen', serif;
+}
+
+.modal-content{
+    background-color: #222429;
+    font-family: 'Uchen', serif;
+}
+.fa-window-close{
+    color:#fff;
+}
+.btn-close{
+    background:none; 
+}
+
+.title{
+    padding:5%;
+}
+
+.card{
+    background-color: #222429;
+    border-color:#16E686;
+    margin: 15px;
+}
+
+.card-title{
+    padding:15px 2px 0 15px;
+}
+
+h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    margin-top: 0;
+    padding-top: 0;
+    margin-left: 9%;
+}
+
+/* Create Post Form */
+
+/* .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  } */
+
+/* .create-post-form{
+    background-color:#000;
+    display: none;
+    width:55vw;
+    padding:2%;
+    position:fixed;
+    z-index: 9;
+} */
+
+/* .form-title{
+    color:#fff;
+} */
+
+.btn-create-post,
+.btn-post-page{
+    background-color:#16E686;
+    border:#16E686;
+    color:#000;
+}
