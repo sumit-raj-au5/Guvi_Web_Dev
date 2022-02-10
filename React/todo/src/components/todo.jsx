@@ -38,7 +38,12 @@ function Todo() {
       })
     );
   }
-
+function handleDelete(event){
+  let taskIndex = event.target.id;
+    setAllToDoArray((prevAllToDoArray) =>
+      prevAllToDoArray.filter((todo) => (allToDoArray.indexOf(todo) !== +taskIndex))
+    );
+}
   const handleDisplay = (event) => {
     let { name } = event.target
     setDisplayTaskFlag((prevFlag) => ({
@@ -107,11 +112,11 @@ function Todo() {
                     </Button>
                   </li>
                 </ul>
-                {displayTaskFlag.all && allToDoArray.map((todo)=><ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue}/>)}
+                {displayTaskFlag.all && allToDoArray.map((todo)=><ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue} handleDelete={handleDelete}/>)}
                 {displayTaskFlag.active && allToDoArray.map((todo)=>{if(!todo.completed)
-                return (<ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue}/>)})}
+                return (<ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue} handleDelete={handleDelete}/>)})}
                 {displayTaskFlag.completed && allToDoArray.map((todo)=>{if(todo.completed)
-                return (<ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue}/>)})}
+                return (<ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue} handleDelete={handleDelete}/>)})}
               </div>
             </div>
           </div>
