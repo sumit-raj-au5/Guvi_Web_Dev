@@ -72,6 +72,7 @@ function Todo() {
                     value={newToDo}
                     onChange={handleChange}
                   />
+                  <Button type="submit" variant="success" className="mt-2">Add Task</Button>
                 </form>
 
                 <ul className="nav nav-pills todo-nav">
