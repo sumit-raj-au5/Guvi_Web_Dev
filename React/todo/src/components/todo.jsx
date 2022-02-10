@@ -6,7 +6,6 @@ import ToDoList from "./todoList"
 function Todo() {
   const [allToDoArray, setAllToDoArray] = useState([]);
   const [newToDo, setNewToDo] = useState("");
-  const [toDoArrayDisplay, setToDoArrayDisplay] = useState([])
   const [displayTaskFlag, setDisplayTaskFlag] = useState({
     all: true,
     active: false,
@@ -19,17 +18,12 @@ function Todo() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    console.log("SubmittedToDo added");
+    //console.log("SubmittedToDo added");
     setAllToDoArray((preAllToDoArray) => [
       ...preAllToDoArray,
       { completed: false, toDoValue: newToDo },
     ]);
-    updateCard()
     setNewToDo("");
-  }
-
-  function updateCard(){
-    setToDoArrayDisplay(allToDoArray.map((todo)=>(todo)))
   }
 
   function handleTaskClick(event) {
@@ -46,15 +40,7 @@ function Todo() {
   }
 
   const handleDisplay = (event) => {
-    let { name } = event.target;
-    if (name === "all") {
-      setToDoArrayDisplay(allToDoArray.map((todo)=>(todo)))
-    } else if (name === 'active') {
-      setToDoArrayDisplay(allToDoArray.filter((todo)=>(!todo.completed)));
-    } else if (name === 'completed') {
-      setToDoArrayDisplay(allToDoArray.filter((todo)=>(todo.completed)));
-    }
-
+    let { name } = event.target
     setDisplayTaskFlag((prevFlag) => ({
       ...prevFlag,
       all: false,
@@ -69,7 +55,7 @@ function Todo() {
   // console.log(newToDo);
   // console.log(allToDoArray);
   // console.log(displayTaskFlag);
-  console.log(toDoArrayDisplay);
+  //console.log(toDoArrayDisplay);
 
   return (
     <div>
@@ -120,8 +106,11 @@ function Todo() {
                     </Button>
                   </li>
                 </ul>
-                {toDoArrayDisplay.length?toDoArrayDisplay.map((todo)=>
-                  <ToDoList key={toDoArrayDisplay.indexOf(todo)} id = {toDoArrayDisplay.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue}/>):"No Task"}
+                {displayTaskFlag.all && allToDoArray.map((todo)=><ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue}/>)}
+                {displayTaskFlag.active && allToDoArray.map((todo)=>{if(!todo.completed)
+                return (<ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue}/>)})}
+                {displayTaskFlag.completed && allToDoArray.map((todo)=>{if(todo.completed)
+                return (<ToDoList key={allToDoArray.indexOf(todo)} id = {allToDoArray.indexOf(todo)} handleTaskClick={handleTaskClick} completed={todo.completed} toDoValue={todo.toDoValue}/>)})}
               </div>
             </div>
           </div>
