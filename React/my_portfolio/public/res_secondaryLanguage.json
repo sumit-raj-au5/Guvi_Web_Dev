@@ -1,0 +1,102 @@
+{
+    "basic_info": {
+      "description_header": "नमस्कार",
+      "description": "🙏 मैं सुमित राज हूं। मैं एक जोशीला शिक्षार्थी और सॉफ्टवेयर डेवलपर हूं। वर्तमान में मैं KPIT में कार्यरत हूँ। मुझे वेब और एम्बेडेड तकनीकों का अनुभव है। मैं आजीवन सीखने और एक नेक काम के लिए ज्ञान का उपयोग करने में विश्वास करता हूं। धन्यवाद 💜",
+      "section_name": {
+        "about": "मुझे जाने",
+        "projects": "परियोजनाओं (Projects)",
+        "skills": "कौशल",
+        "experience": "अनुभव"
+      }
+    },
+    "projects": [
+      {
+        "title": "Animal Shelter",
+        "startDate": "2020",
+        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "images": [
+          "images/portfolio/animal-shelter/p1.jpg",
+          "images/portfolio/animal-shelter/p2.jpg"
+        ],
+        "url": "",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      },
+      {
+        "title": "Photography",
+        "startDate": "2018",
+        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
+        "images": [
+          "images/portfolio/photography/p1.jpg",
+          "images/portfolio/photography/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-react-original",
+            "name": "React"
+          },
+          {
+            "class": "devicon-javascript-plain",
+            "name": "JavaScript"
+          }
+        ]
+      },
+      {
+        "title": "3D Object Viewer",
+        "startDate": "2015",
+        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "images": [
+          "images/portfolio/adventure/p1.jpg",
+          "images/portfolio/adventure/p2.jpg"
+        ],
+        "url": "https://github.com",
+        "technologies": [
+          {
+            "class": "devicon-angularjs-plain",
+            "name": "Angular"
+          },
+          {
+            "class": "devicon-typescript-plain",
+            "name": "TypeScript"
+          },
+          {
+            "class": "devicon-csharp-plain",
+            "name": "C#"
+          }
+        ]
+      }
+    ],
+    "experience": [
+      {
+        "company": "KPIT",
+        "title": "सॉफ्टवेयर इंजीनियर",
+        "years": "10.2019 - वर्तमान",
+        "mainTech": [
+          "उपकरणों के नियंत्रण के लिए सॉफ्टवेयर"
+        ],
+        "technologies": [
+          "C",
+          "Embedded C",
+          "Python",
+          "AUTOSAR",
+          "MISRA",
+          "Modbus",
+          "CAN",
+          "Microcontroller - 32bit"
+        ]
+      }
+    ]
+  }

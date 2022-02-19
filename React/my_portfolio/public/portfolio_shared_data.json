@@ -1,0 +1,79 @@
+{
+    "basic_info": {
+      "name": "Sumit Raj",
+      "titles": [ "Front-end Developer", "Back-end Developer", "Fullstack Developer", "Embedded Software Engineer" ],
+      "social": [
+        {
+          "name": "linkedin",
+          "url": "https://www.linkedin.com/in/hirajsumit/",
+          "class": "fab fa-linkedin"
+        },
+        {
+          "name": "instagram",
+          "url": "https://twitter.com/dev_sumit_raj",
+          "class": "fab fa-twitter"
+        }
+      ],
+      "image": "myProfile.jpg"
+    },
+    "skills": {
+      "icons": [
+        {
+          "name": "HTML 5",
+          "class": "devicon-html5-plain",
+          "level": "95"
+        },
+        {
+          "name": "CSS 3",
+          "class": "devicon-css3-plain",
+          "level": "95"
+        },
+        {
+          "name": "Bootstrap",
+          "class": "devicon-bootstrap-plain",
+          "level": "85"
+        },
+        {
+          "name": "React",
+          "class": "devicon-react-plain",
+          "level": "80"
+        },
+        {
+          "name": "JavaScript",
+          "class": "devicon-javascript-plain",
+          "level": "70"
+        },
+        {
+          "name": "NodeJS",
+          "class": "devicon-nodejs-plain",
+          "level": "70"
+        },
+        {
+          "name": "Express",
+          "class": "devicon-express-original",
+          "level": "70"
+        },
+        {
+          "name": "MySql",
+          "class": "devicon-mysql-plain",
+          "level": "60"
+        },
+        {
+          "name": "MongoDB",
+          "class": "devicon-mongodb-plain",
+          "level": "65"
+        },
+        {
+          "name": "C",
+          "class": "devicon-c-plain",
+          "level": "65"
+        },
+        {
+          "name": "Python",
+          "class": "devicon-python-plain",
+          "level": "65"
+        }
+
+      ]
+    }
+  }
