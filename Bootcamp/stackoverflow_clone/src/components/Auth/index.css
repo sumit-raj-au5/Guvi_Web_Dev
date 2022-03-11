@@ -33,15 +33,23 @@
     border-radius: 3px;
     color: rgba(0, 0, 0, 0.8);
     background-color: #fff;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-      0 6px 20px 0 rgba(66, 42, 42, 0.19);
     cursor: pointer;
+    
+  }
+
+  .box-shadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(66, 42, 42, 0.19);
     transition: all 0.3s;
   }
-  
-  .single-option:hover {
+
+  .box-shadow:hover{
     box-shadow: 0 4px 8px 0 #0095ff15, 0 6px 20px 0 #0095ff52;
   }
+  
+  /* .single-option:hover {
+    box-shadow: 0 4px 8px 0 #0095ff15, 0 6px 20px 0 #0095ff52;
+  } */
   
   .single-option > p {
     margin-left: 10px;
