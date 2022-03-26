@@ -2,8 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Avatar } from "@mui/material";
 import "./AllQuestion.css";
+import ReactHtmlParser from 'react-html-parser';
 
-function AllQuestion() {
+function AllQuestion({question}) {
+  //getting all tags of the question
+  const tags = JSON.parse(question?.tags[0])
+  console.log(tags)
+
+  const truncate = (str, n) => (str?.length>n?str.substr(0, n-1) + '...':str) 
+
   return (
     <div className="all-questions">
       <div className="all-questions-container">
@@ -15,7 +22,7 @@ function AllQuestion() {
             </div>
 
             <div className="all-option">
-              <p>0</p>
+              <p>{question?.answerDetails?.length}</p>
               <span>Answers</span>
             </div>
 
@@ -26,33 +33,33 @@ function AllQuestion() {
         </div>
 
         <div className="question-answer">
-          <Link to={'/question'}>
-            This is question title. This is question title. This is question
-            title. This is question title. This is question title?
+        {/* Sending question ID */}
+          <Link to={`/question?q=${question?._id}`}>
+            {question?truncate(question.title, 150):'Loading....'}
           </Link>
           <div style={{ width: "90%" }}>
             <div>
-              This is answer. This is answer. This is answer.This is answer.This
-              is answer.This is answer.This is answer.This is answer.This is
-              answer.This is answer.This is answer.
+            {/* Parsing in HTML single tags are stored in body from react quill */}
+              {ReactHtmlParser(question?truncate(question.body, 150):'Loading Question....')}
             </div>
           </div>
-
           <div
             style={{
               display: "flex",
             }}
           >
-            <span className="question-tags">react</span>
-            <span className="question-tags">ant</span>
-            <span className="question-tags">frontend</span>
+          {tags.map((tag,index)=>(
+            
+          <span key={index} className="question-tags">{tag}</span>
+          
+          ))}
+          
           </div>
-        
         <div className="author">
-          <small>TimeStamp</small>
+          <small>{new Date(question?.created_at).toLocaleString()}</small>
           <div className="author-details">
-            <Avatar />
-            <p>User Name</p>
+            <Avatar src={question?.user?.photo}/>
+            <p>{question?.user?.displayName? question?.user?.displayName : String(question?.user?.email).split('@')[0]}</p>
           </div>
           </div>
         </div>
