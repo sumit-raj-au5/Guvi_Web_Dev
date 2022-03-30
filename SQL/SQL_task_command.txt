@@ -1,0 +1,174 @@
+/*
+
+The Following are the tables has to be in your database & model deisgn:
+users
+codekata
+attendance
+topics
+tasks
+company_drives
+mentors
+students_activated_courses
+courses
+
+The following are the queries need to be executed
+
+1. Create tables for the above list given
+2. insert at least 5 rows of values in each table
+*/
+CREATE DATABASE zen;
+USE zen;
+
+CREATE TABLE users (ID INT NOT NULL, student_name VARCHAR(50), student_email VARCHAR(70), PRIMARY KEY(ID));
+INSERT INTO users VALUES
+(1, "Sumit Raj", "sumit@gmail.com"),
+(2, "Satyam Raj", "satyam@gmail.com"),
+(3, "Rohit Raj", "Rohit@gmail.com"),
+(4, "Ajit Kumar", "Ajit@gmail.com"),
+(5, "Akriti Singh", "Akriti@gmail.com"),
+(6, "Anuj Kumar", "anuj@gmail.com"),
+(7, "Ayushi Kumari", "ayushi@gmail.com"),
+(8, "Disha", "disha@gmail.com"),
+(9, "Suryansh", "suryansh@gmail.com"),
+(19, "Vaidehi", "vaidehi@gmail.com");
+
+CREATE TABLE codekata (ID INT NOT NULL, student_email VARCHAR(70), problem_solved INT, PRIMARY KEY(ID));
+INSERT INTO codekata VALUES
+(1, "sumit@gmail.com", 70),
+(2, "satyam@gmail.com", 200),
+(3, "Rohit@gmail.com", 500),
+(4, "Ajit@gmail.com", 5),
+(5, "Akriti@gmail.com", 0),
+(6, "anuj@gmail.com", 100),
+(7, "ayushi@gmail.com", 254),
+(8, "disha@gmail.com", 456),
+(9, "suryansh@gmail.com", 24),
+(10, "vaidehi@gmail.com", 47);
+
+CREATE TABLE attendance (ID INT NOT NULL, student_email VARCHAR(70), attedance_percentage FLOAT, PRIMARY KEY(ID));
+INSERT INTO attendance VALUES
+(1, "sumit@gmail.com", 70),
+(2, "satyam@gmail.com", 23.56),
+(3, "Rohit@gmail.com", 50),
+(4, "Ajit@gmail.com", 55.6),
+(5, "Akriti@gmail.com", 0),
+(6, "anuj@gmail.com", 100),
+(7, "ayushi@gmail.com", 25.4),
+(8, "disha@gmail.com", 45.6),
+(9, "suryansh@gmail.com", 24),
+(10, "vaidehi@gmail.com", 47);
+
+CREATE TABLE topics (ID INT NOT NULL, student_email VARCHAR(70), HTML BOOL, CSS BOOL, Javascript BOOL, React BOOL, SQL BOOL, Mongodb BOOL, NodeJS BOOL, System_design BOOL, PRIMARY KEY(ID));
+INSERT INTO topics VALUES
+(1, "sumit@gmail.com", 1, 1, 1, 1, 1, 0, 0, 0),
+(2, "satyam@gmail.com", 1, 1, 1, 1, 1, 0, 0, 0),
+(3, "Rohit@gmail.com", 1, 1, 1, 1, 1, 0, 0, 0),
+(4, "Ajit@gmail.com", 1, 1, 0, 1, 1, 0, 0, 0),
+(5, "Akriti@gmail.com", 1, 1, 1, 1, 1, 0, 0, 0),
+(6, "anuj@gmail.com", 1, 1, 1, 1, 1, 0, 0, 0),
+(7, "ayushi@gmail.com", 1, 0, 1, 1, 1, 0, 0, 0),
+(8, "disha@gmail.com", 1, 1, 1, 1, 0, 0, 0, 0),
+(9, "suryansh@gmail.com", 1, 1, 1, 1, 1, 1, 1, 0),
+(10, "vaidehi@gmail.com", 1, 1, 1, 0, 0, 0, 0, 0);
+
+CREATE TABLE tasks (ID INT NOT NULL, student_email VARCHAR(70), HTML INT, CSS INT, Javascript INT, React INT, SQL INT, Mongodb INT, NodeJS INT, System_design INT, PRIMARY KEY(ID));
+INSERT INTO tasks VALUES
+(1, "sumit@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(2, "satyam@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(3, "Rohit@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(4, "Ajit@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(5, "Akriti@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(6, "anuj@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(7, "ayushi@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(8, "disha@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(9, "suryansh@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(10, "vaidehi@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3);
+
+CREATE TABLE tasks (ID INT NOT NULL, student_email VARCHAR(70), PRIMARY KEY(ID));
+INSERT INTO tasks VALUES
+(1, "sumit@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(2, "satyam@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(3, "Rohit@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(4, "Ajit@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(5, "Akriti@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(6, "anuj@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(7, "ayushi@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(8, "disha@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(9, "suryansh@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3),
+(10, "vaidehi@gmail.com", 3, 3, 4, 4, 2, 2, 4, 3);
+
+CREATE TABLE mentor (ID INT NOT NULL, mentor_name VARCHAR(50), mentor_email VARCHAR(70), contact INT, assigned_student_mail VARCHAR(70), course VARCHAR(50), PRIMARY KEY(ID));
+INSERT INTO mentor VALUES
+(1, "suresh", "suresh@gmail.com", 9108913822, "sumit@gmail.com", "React"),
+(2, "suresh", "suresh@gmail.com", 9108913822, "satyam@gmail.com", "React"),
+(3, "mahesh", "mahesh@gmail.com", 9108913823, "Rohit@gmail.com", "Javascript"),
+(4, "mahi", "mahi@gmail.com", 9108913824, "Ajit@gmail.com", "NodeJS"),
+(5, "mahesh", "mahesh@gmail.com", 9108913823, "Akriti@gmail.com", "Javascript"),
+(6,"suresh", "suresh@gmail.com", 9108913822, "anuj@gmail.com", "React"),
+(7, "mahesh", "mahesh@gmail.com", 9108913823, "ayushi@gmail.com", "Javascript"),
+(8, "disha", "disha2@gmail.com", 9108913883, "", "System Design"),
+(9, "Radhe", "radhe@gmail.com", 6201422556, "suryansh@gmail.com", "SQL"),
+(10, "Radhe", "radhe@gmail.com", 6201422556, "vaidehi@gmail.com","SQL");
+
+CREATE TABLE students_activated_courses (ID INT NOT NULL, student_mail VARCHAR(70), course VARCHAR(50), PRIMARY KEY(ID));
+INSERT INTO students_activated_courses VALUES
+(1, "sumit@gmail.com", "React"),
+(2, "satyam@gmail.com", "React"),
+(3, "Rohit@gmail.com", "Javascript"),
+(4, "Ajit@gmail.com", "NodeJS"),
+(5, "Akriti@gmail.com", "Javascript"),
+(6, "anuj@gmail.com", "React"),
+(7, "ayushi@gmail.com", "Javascript"),
+(8, "sumit@gmail.com", "System Design"),
+(9, "suryansh@gmail.com", "SQL"),
+(10, "vaidehi@gmail.com","SQL");
+
+CREATE TABLE courses(ID INT NOT NULL, course VARCHAR(50), course_category VARCHAR(50), price MONEY, PRIMARY KEY(ID));
+INSERT INTO courses VALUES
+(1, "HTML", "web", 989),
+(2, "CSS", "web", 999),
+(3, "React", "web", 1099),
+(4, "Javascript", "web", 900),
+(5, "Python", "web", 989),
+(6, "Python", "data science", 989),
+(7, "SQL", "web", 356),
+(8, "Mongodb", "web", 1100),
+(9, "NodeJS", "web", 1800),
+(10, "System Design", "web", 2500);
+
+CREATE TABLE company_drives(ID INT NOT NULL, company_name VARCHAR(50), drive_date DATE, attended_candidate_mail VARCHAR(70), selected BOOL, PRIMARY KEY(ID));
+INSERT INTO company_drives VALUES
+(1, "KPIT", '2022-03-02', "sumitwebmagic@gmail.com", true),
+(2, "KPIT", '2022-03-02', "vaidehi@gmail.com", true),
+(3, "Accenture", '2022-03-04', "sumitwebmagic@gmail.com", true),
+(4, "KPIT", '2022-03-02', "Akriti@gmail.com",true),
+(5, "TCS", '2022-03-05', "anuj@gmail.com",false),
+(6, "TCS", '2022-03-05', "satyam@gmail.com",true),
+(7, "TCS", '2022-03-05', "ayushi@gmail.com",true),
+(8, "TCS", '2022-03-05', "suryansh@gmail.com", true),
+(9, "TCS", '2022-03-05', "Ajit@gmail.com", false),
+(10, "Flipkart", '2022-03-06', NULL, NULL);
+
+-- 3. get number problems solved in codekata by combining the users
+SELECT SUM(problem_solved)
+FROM codekata;
+
+-- 4. display the no of company drives attended by a user
+SELECT COUNT(attended_candidate_mail)
+FROM company_drives
+WHERE attended_candidate_mail="sumitwebmagic@gmail.com" AND selected=true;
+
+-- 5. combine and display students_activated_courses and courses for a specific user groping them based on the course
+SELECT students_activated_courses.student_mail, courses.course, courses.course_category, courses.price
+FROM courses
+INNER JOIN students_activated_courses ON courses.course = students_activated_courses.course
+WHERE students_activated_courses.student_mail="sumitwebmagic@gmail.com";
+
+-- 6. list all the mentors
+SELECT DISTINCT mentor_name
+FROM mentor;
+
+--7. list the number of students that are assigned for a mentor
+SELECT COUNT(assigned_student_mail)
+FROM mentor
+WHERE mentor_email = "suresh@gmail.com";
