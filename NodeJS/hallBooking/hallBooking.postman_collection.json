@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "1f187df8-c11c-4005-b2a8-a87092ef4654",
+		"name": "hallBooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"room_no\":305,\r\n    \"amenities\":[\"minibar\", \"ac\"],\r\n    \"pricing\": 1200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://halllbooking.herokuapp.com/addRoom",
+					"protocol": "https",
+					"host": [
+						"halllbooking",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"addRoom"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "book room",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"room_no\":305,\r\n    \"customer_name\":\"Satyam Raj\",\r\n    \"date\":\"08-04-2022\",\r\n    \"start_time\":\"10:00\",\r\n    \"end_time\":\"17:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://halllbooking.herokuapp.com/bookingDetails",
+					"protocol": "https",
+					"host": [
+						"halllbooking",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bookingDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All customer with booking data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://halllbooking.herokuapp.com/bookingDetails/customerdata",
+					"protocol": "https",
+					"host": [
+						"halllbooking",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"bookingDetails",
+						"customerdata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All room with booking data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://halllbooking.herokuapp.com/addroom/roomdetails",
+					"protocol": "https",
+					"host": [
+						"halllbooking",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"addroom",
+						"roomdetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
