@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "d967bb54-1dd1-4523-a4a8-4276ed6bdac8",
-		"name": "assign-mentor-addStudent",
+		"name": "assign-mentor",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -20,12 +20,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/students",
-					"protocol": "http",
+					"raw": "https://student-mentorr.herokuapp.com/students",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"student-mentorr",
+						"herokuapp",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"students"
 					]
@@ -40,7 +41,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id_no\":1,\r\n    \"name\":\"Mahesh Nagraj\",\r\n    \"assigned_student_id\":[1]\r\n}",
+					"raw": "{\r\n    \"id_no\":3,\r\n    \"name\":\"Prashant\",\r\n    \"assigned_student_id\":null\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -48,12 +49,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/mentors",
-					"protocol": "http",
+					"raw": "https://student-mentorr.herokuapp.com/mentors",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"student-mentorr",
+						"herokuapp",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"mentors"
 					]
@@ -76,14 +78,14 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/students/assignmentor",
-					"protocol": "http",
+					"raw": "https://student-mentorr.herokuapp.com/assignmentor",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"student-mentorr",
+						"herokuapp",
+						"com"
 					],
-					"port": "3000",
 					"path": [
-						"students",
 						"assignmentor"
 					]
 				}
@@ -105,12 +107,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/mentors/2",
-					"protocol": "http",
+					"raw": "https://student-mentorr.herokuapp.com/mentors/2",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"student-mentorr",
+						"herokuapp",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"mentors",
 						"2"
@@ -125,12 +128,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/students/allstudentswithoutmentor",
-					"protocol": "http",
+					"raw": "https://student-mentorr.herokuapp.com/students/allstudentswithoutmentor",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"student-mentorr",
+						"herokuapp",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"students",
 						"allstudentswithoutmentor"
@@ -145,12 +149,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/mentors/1",
-					"protocol": "http",
+					"raw": "https://student-mentorr.herokuapp.com/mentors/1",
+					"protocol": "https",
 					"host": [
-						"localhost"
+						"student-mentorr",
+						"herokuapp",
+						"com"
 					],
-					"port": "3000",
 					"path": [
 						"mentors",
 						"1"
