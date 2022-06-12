@@ -11,79 +11,221 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "The most expanded application I had opportunity to work with. I've learned many technologies and my code was reviewed by awesome curator. Application handles all adoption processess and allows to store all evidence on adopting animals from animal shelter.",
+        "title": "Stackoverflow Clone",
+        "startDate": "2022",
+        "description": "A place where developers meet. Ask a question, answer a question, or comment. Help each other. Github link:- https://github.com/sumit-raj-au5/Guvi_Web_Dev/tree/main/Bootcamp/stackoverflow_clone (Google may give deceptive website warning due to design similarity with stackover, it's safe to proceed)",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/stackoverflow/p1.png",
+          "images/portfolio/stackoverflow/p2.png",
+          "images/portfolio/stackoverflow/p3.png"
         ],
-        "url": "",
+        "url": "https://stackoverflow-clone-guvi.netlify.app",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Personal project for study subject. I was responsible for testing photography application that optimizes images with popular algorithms used by graphic editors like Pixlr or Adobe Photoshop. I've earned A grade :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
+            "class": "devicon-react-original colored",
             "name": "React"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
+          },
+          {
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
           }
+          
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "One of the first apps I was working on my internship. I had to develop front-end implementation for app that shows 3D models of known buildings. This was also my first project in Angular framework. I've learned a lot!",
+        "title": "URL_Shortner",
+        "startDate": "2022",
+        "description": "A website where you can shorten a link and also see how many times that website was accessed through the shortened link. For signup, a user is verified using email. Github link :- https://github.com/sumit-raj-au5/URLshortner",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/URL_Shortner/p1.png",
+          "images/portfolio/URL_Shortner/p2.png",
+          "images/portfolio/URL_Shortner/p3.png"
         ],
-        "url": "https://github.com",
+        "url": "https://small-url.netlify.app",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-react-original colored",
+            "name": "React"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
+          }
+          
+        ]
+      },
+      {
+        "title": "ToDo App",
+        "startDate": "2022",
+        "description": "Implemented Social Sign-in using Passport. Data is centrally stored in MongoDB. Users can create a task and mark them completed. Task creation time is also maintained in user local time. Github Link:- https://github.com/sumit-raj-au5/ToDo_App",
+        "images": [
+          "images/portfolio/toDo/p1.png",
+          "images/portfolio/toDo/p2.png",
+          "images/portfolio/toDo/p3.png"
+        ],
+        "url": "https://todoapp-guvi.netlify.app",
+        "technologies": [
+          {
+            "class": "devicon-react-original colored",
+            "name": "React"
+          },
+          {
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
+          },
+          {
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
+          }
+          
+        ]
+      },
+
+      {
+        "title": "Blogs",
+        "startDate": "2022",
+        "description": "Read Blogs, add a new blog with a rich text editor, and edit or delete your blog. Github Link:- https://github.com/sumit-raj-au5/blog-fullstack",
+        "images": [
+          "images/portfolio/blog/p1.png",
+          "images/portfolio/blog/p2.png",
+          "images/portfolio/blog/p3.png"
+        ],
+        "url": "https://blog-mern-guvi.netlify.app",
+        "technologies": [
+          {
+            "class": "devicon-react-original colored",
+            "name": "React"
+          },
+          {
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
+          },
+          {
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
+          }
+          
+        ]
+      },
+
+      {
+        "title": "VTU Solution",
+        "startDate": "2018",
+        "description": "I made this website in college to help my university students and to test my SEO skills. I used CMS to make this website i.e No-code. Implemented Google Analytics, Live Chat and Google Ads in this website. Wesite has been in first page of google search with more than 4 Lakhs of visit.",
+        "images": [
+          "images/portfolio/vtu_solution/p1.png",
+          "images/portfolio/vtu_solution/p2.png",
+          "images/portfolio/vtu_solution/p3.png",
+          "images/portfolio/vtu_solution/p4.png"
+        ],
+        "url": "https://vtusolution.in/index.html",
+        "technologies": [
+          {
+            "class": "devicon-wordpress-plain colored",
+            "name": "Wordpress"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Analytics"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Ads"
+          }
+        ]
+      },
+
+      {
+        "title": "Maa Gayatri Boys Hostel",
+        "startDate": "2018",
+        "description": "I made this website for a Hostel in Patna. Used my SEO knowledge to rank this website on the 1st page for Google search. Integrated Google Analytics, AI bot and live chat. Website has more than a lakh visit.",
+        "images": [
+          "images/portfolio/hostel/p1.png",
+          "images/portfolio/hostel/p2.png",
+          "images/portfolio/hostel/p3.png",
+          "images/portfolio/hostel/p4.png",
+          "images/portfolio/hostel/p5.png"
+        ],
+        "url": "https://www.patnaboyshostel.com/",
+        "technologies": [
+          {
+            "class": "devicon-wordpress-plain colored",
+            "name": "Wordpress"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Analytics"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Ads"
           }
         ]
       }
     ],
     "experience": [
       {
+        "company": "Tata Autocomp",
+        "title": "Design Engineer",
+        "years": "05.2022 - Present",
+        "mainTech": [
+          "Electric Vehicle R&D"
+        ],
+        "technologies": [
+          "C",
+          "Embedded C",
+          "Python",
+          "AUTOSAR",
+          "MISRA",
+          "CAN",
+          "Microcontroller - 16bit",
+          "Electric Vehicle"
+        ]
+      },
+      {
         "company": "KPIT",
         "title": "Software Engineer",
-        "years": "11.2019 - present",
+        "years": "11.2019 - 05.2022",
         "mainTech": [
           "Embedded Software"
         ],
@@ -94,7 +236,6 @@
           "AUTOSAR",
           "MISRA",
           "Modbus",
-          "CAN",
           "Microcontroller - 32bit"
         ]
       }

@@ -11,78 +11,221 @@
     },
     "projects": [
       {
-        "title": "Animal Shelter",
-        "startDate": "2020",
-        "description": "Najbardziej rozbudowana aplikacja nad którą miałam okazję pracować. Poznałam dużo technologii a mój kod by sprawdzany przez super opiekuna. Aplikacja obsługuje wszystkie procesy adopcji i pozwala na przechowywanie wszelkiej dokumentacji związanej z adopcją zwierząt ze schroniska.",
+        "title": "Stackoverflow Clone",
+        "startDate": "2022",
+        "description": "एक जगह जहां डेवलपर्स मिलते हैं। प्रश्न पूछें, प्रश्न का उत्तर दें, या टिप्पणी करें। एक दूसरे की मदद करें। Github लिंक: - https://github.com/sumit-raj-au5/Guvi_Web_Dev/tree/main/Bootcamp/stackoverflow_clone (स्टैकओवर के साथ डिजाइन समानता के कारण Google भ्रामक वेबसाइट चेतावनी दे सकता है, आगे बढ़ना सुरक्षित है।)",
         "images": [
-          "images/portfolio/animal-shelter/p1.jpg",
-          "images/portfolio/animal-shelter/p2.jpg"
+          "images/portfolio/stackoverflow/p1.png",
+          "images/portfolio/stackoverflow/p2.png",
+          "images/portfolio/stackoverflow/p3.png"
         ],
-        "url": "",
+        "url": "https://stackoverflow-clone-guvi.netlify.app",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
-          },
-          {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
-          },
-          {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
-          }
-        ]
-      },
-      {
-        "title": "Photography",
-        "startDate": "2018",
-        "description": "Osobisty projekt na przedmiot ze studiów. Byłam odpowiedzilna za testowanie aplikacji, która optymalizuje zdjęcia z pomocą popularnych algorytmów używanych przed edytory grafiki takie jak Pixlr czy Adobe Photoshop. Otrzymałam 5-tkę za projekt :)",
-        "images": [
-          "images/portfolio/photography/p1.jpg",
-          "images/portfolio/photography/p2.jpg"
-        ],
-        "url": "https://github.com",
-        "technologies": [
-          {
-            "class": "devicon-react-original",
+            "class": "devicon-react-original colored",
             "name": "React"
           },
           {
-            "class": "devicon-javascript-plain",
-            "name": "JavaScript"
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
+          },
+          {
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
           }
+          
         ]
       },
       {
-        "title": "3D Object Viewer",
-        "startDate": "2015",
-        "description": "Jedna z pierwszych aplikacji nad którymi pracowałam na stażu. Musiałam przygotować front-end dla aplikacji, która pokazuje modele 3D znanych budynków. To był także mój pierwszy projekt w frameworku Angular. Dużo się nauczyłam!",
+        "title": "URL_Shortner",
+        "startDate": "2022",
+        "description": "एक वेबसाइट जहां आप एक लिंक को छोटा कर सकते हैं और यह भी देख सकते हैं कि उस वेबसाइट को कितनी बार शॉर्ट लिंक के माध्यम से एक्सेस किया गया था। साइनअप के लिए, उपयोगकर्ता को ईमेल का उपयोग करके सत्यापित किया जाता है। Github link :- https://github.com/sumit-raj-au5/URLshortner",
         "images": [
-          "images/portfolio/adventure/p1.jpg",
-          "images/portfolio/adventure/p2.jpg"
+          "images/portfolio/URL_Shortner/p1.png",
+          "images/portfolio/URL_Shortner/p2.png",
+          "images/portfolio/URL_Shortner/p3.png"
         ],
-        "url": "https://github.com",
+        "url": "https://small-url.netlify.app",
         "technologies": [
           {
-            "class": "devicon-angularjs-plain",
-            "name": "Angular"
+            "class": "devicon-react-original colored",
+            "name": "React"
           },
           {
-            "class": "devicon-typescript-plain",
-            "name": "TypeScript"
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
           },
           {
-            "class": "devicon-csharp-plain",
-            "name": "C#"
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
+          }
+          
+        ]
+      },
+      {
+        "title": "ToDo App",
+        "startDate": "2022",
+        "description": "पासपोर्ट का उपयोग करके सामाजिक साइन-इन कार्यान्वित किया है। डेटा को MongoDB में केंद्रीय रूप से संग्रहीत किया जाता है। उपयोगकर्ता एक कार्य बना सकते हैं और उन्हें पूरा कर सकते हैं। उपयोगकर्ता के स्थानीय समय में कार्य निर्माण समय भी बनाए रखा जाता है। Github Link:- https://github.com/sumit-raj-au5/ToDo_App",
+        "images": [
+          "images/portfolio/toDo/p1.png",
+          "images/portfolio/toDo/p2.png",
+          "images/portfolio/toDo/p3.png"
+        ],
+        "url": "https://todoapp-guvi.netlify.app",
+        "technologies": [
+          {
+            "class": "devicon-react-original colored",
+            "name": "React"
+          },
+          {
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
+          },
+          {
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
+          }
+          
+        ]
+      },
+
+      {
+        "title": "Blogs",
+        "startDate": "2022",
+        "description": "ब्लॉग पढ़ें, रिच टेक्स्ट एडिटर के साथ एक नया ब्लॉग जोड़ें और अपने ब्लॉग को संपादित करें या हटाएं। जीथब लिंक:- https://github.com/sumit-raj-au5/blog-fullstack",
+        "images": [
+          "images/portfolio/blog/p1.png",
+          "images/portfolio/blog/p2.png",
+          "images/portfolio/blog/p3.png"
+        ],
+        "url": "https://blog-mern-guvi.netlify.app",
+        "technologies": [
+          {
+            "class": "devicon-react-original colored",
+            "name": "React"
+          },
+          {
+            "class": "devicon-nodejs-plain-wordmark colored",
+            "name": "NodeJs"
+          },
+          {
+            "class": "devicon-mongodb-plain-wordmark colored",
+            "name": "MongoDB"
+          },
+          {
+            "class": "devicon-express-original colored",
+            "name": "Express"
+          },
+          {
+            "class": "devicon-heroku-original colored",
+            "name": "Heroku"
+          }
+          
+        ]
+      },
+
+      {
+        "title": "VTU Solution",
+        "startDate": "2018",
+        "description": "मैंने इस वेबसाइट को कॉलेज में अपने विश्वविद्यालय के छात्रों की मदद करने और अपने एसईओ कौशल का परीक्षण करने के लिए बनाया है। मैंने इस वेबसाइट को बनाने के लिए सीएमएस का इस्तेमाल किया यानी नो-कोड। इस वेबसाइट पर Google Analytics, लाइव चैट और Google Ads को लागू किया। वेबसाइट 4 लाख से अधिक विज़िट के साथ Google खोज के पहले पृष्ठ पर रही है।",
+        "images": [
+          "images/portfolio/vtu_solution/p1.png",
+          "images/portfolio/vtu_solution/p2.png",
+          "images/portfolio/vtu_solution/p3.png",
+          "images/portfolio/vtu_solution/p4.png"
+        ],
+        "url": "https://vtusolution.in/index.html",
+        "technologies": [
+          {
+            "class": "devicon-wordpress-plain colored",
+            "name": "Wordpress"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Analytics"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Ads"
+          }
+        ]
+      },
+
+      {
+        "title": "Maa Gayatri Boys Hostel",
+        "startDate": "2018",
+        "description": "मैंने यह वेबसाइट पटना में एक छात्रावास के लिए बनाई है। इस वेबसाइट को Google खोज के लिए प्रथम पृष्ठ पर रैंक करने के लिए मेरे SEO ज्ञान का उपयोग किया। Google Analytics, AI बॉट और लाइव चैट एकीकृत किया। वेबसाइट पर एक लाख से अधिक बार विज़िट हो चुकी हैं।",
+        "images": [
+          "images/portfolio/hostel/p1.png",
+          "images/portfolio/hostel/p2.png",
+          "images/portfolio/hostel/p3.png",
+          "images/portfolio/hostel/p4.png",
+          "images/portfolio/hostel/p5.png"
+        ],
+        "url": "https://www.patnaboyshostel.com/",
+        "technologies": [
+          {
+            "class": "devicon-wordpress-plain colored",
+            "name": "Wordpress"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Analytics"
+          },
+          {
+            "class": "devicon-google-plain-wordmark",
+            "name": "Google Ads"
           }
         ]
       }
     ],
+
     "experience": [
       {
-        "company": "KPIT",
-        "title": "सॉफ्टवेयर इंजीनियर",
+        "company": "टाटा ऑटोकॉम्प",
+        "title": "डिज़ाइन अभियंता",
+        "years": "05.2022 - वर्तमान",
+        "mainTech": [
+          "विद्युत् वाहन अनुसंधान और विकास"
+        ],
+        "technologies": [
+          "C",
+          "Embedded C",
+          "Python",
+          "AUTOSAR",
+          "MISRA",
+          "CAN",
+          "Microcontroller - 16bit",
+          "Electric Vehicle"
+        ]
+      },
+      {
+        "company": "केपीआईटी",
+        "title": "सॉफ्टवेयर अभियंता",
         "years": "10.2019 - वर्तमान",
         "mainTech": [
           "उपकरणों के नियंत्रण के लिए सॉफ्टवेयर"
