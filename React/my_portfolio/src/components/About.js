@@ -27,7 +27,7 @@ class About extends Component {
                     src={profilepic}
                     alt="Avatar placeholder"
                   />
-                  <a href="https://drive.google.com/file/d/1Frl_-AEHG0STSZUNt_xpqlRbvammAJI2/view?usp=sharing" target="_blank"><Button variant="primary">My Resume</Button></a>
+                  <a href="https://drive.google.com/file/d/1bDhNk-HqLnr7Rpvadx1xQkd66-UqRgvZ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><Button variant="primary">My Resume</Button></a>
                 </span>
               </div>
             </div>
